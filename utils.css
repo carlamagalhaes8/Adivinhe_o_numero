@@ -1,0 +1,12 @@
+:root{
+    --branco: #ffffff;
+    --azul-escuro: #1a1f44;
+    --azul-claro: #5169a2;
+    --amarelo: #ffd800;
+
+    --tamanho-h1: 48px;
+    --tamanho-h2: 18px;
+    --tamanho-footer: 14px;
+
+    --fonte: "Space Mono", monospace;
+}

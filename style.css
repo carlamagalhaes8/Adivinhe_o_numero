@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background: url('Assets/fundo_jogo.png') center/cover no-repeat fixed;
+    /* overflow: hidden; */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;            
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--azul-escuro);
+    border: 0.188em solid var(--azul-claro);
+    border-radius: 1em;
+    padding: 2.813em 12em;
+}
+
+#principal img{
+    width: 18%;
+    margin-bottom: 0.938em;
+}
+
+#principal h1, h2{
+    color: var(--branco);
+    font-weight: 400;
+    font-family: var(--fonte);
+}
+
+#principal h1{
+    font-size: var(--tamanho-h1);
+    margin-bottom: 0.313em;
+}
+
+#principal h2{
+    font-size: var(--tamanho-h2);
+    margin-bottom: 2.5em;
+}
+
+#input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    gap: 5%;
+}
+
+#input #inserir_chute, #botao_chute{
+    background-color: var(--azul-escuro);
+    border: 0.188em solid var(--azul-claro);
+    border-radius: 1em;
+    font-family: var(--fonte);
+    color: var(--branco);
+    padding: 0.313em 15%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2.5em;
+}
+
+#botao_chute:hover{
+    transform: scale(1.05);
+}
+
+#principal p{
+    font-family: var(--fonte);
+    color: var(--amarelo);
+    font-size: var(--tamanho-h2)
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-size: var(--tamanho-footer)
+}
