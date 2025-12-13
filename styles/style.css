@@ -40,6 +40,7 @@ main{
     color: var(--branco);
     font-weight: 400;
     font-family: var(--fonte);
+    text-align: center;
 }
 
 #principal h1{
@@ -79,6 +80,7 @@ main{
 }
 
 #retorno{
+    text-align: center;
     font-family: var(--fonte);
     color: var(--amarelo);
     font-size: var(--tamanho-h2)
@@ -93,4 +95,34 @@ footer p{
     font-family: var(--fonte);
     color: var(--branco);
     font-size: var(--tamanho-footer)
+}
+
+@media (max-width: 37.5em){
+
+    main{
+        margin: 1.25em;
+    }
+
+    #principal{
+        padding: 1.875em 1.25em;
+    }
+
+    #input{
+        width: 80%;
+        display: flex;
+        flex-direction: column;               
+    }
+
+    #input #inserir_chute, #botao_chute{
+        padding: 0.5em;
+        margin-bottom: 0;
+    }
+
+    #input #inserir_chute{
+        margin-bottom: 0.938;
+    }
+
+    #input #botao_chute{
+        margin-bottom: 1.875em;
+    }
 }
