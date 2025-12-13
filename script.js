@@ -10,6 +10,6 @@ function chutar(){
     } else if (chute < numeroSecreto) {
             retorno.innerText = `O NÚMERO SECRETO É MAIOR QUE ${chute}`;
     } else{
-            retorno.innerText = `PARABÉNS! VOCÊ DESCOBRIU O NÚMERO SECRETO ${numeroSecreto}`;
+            retorno.innerText = `PARABÉNS! VOCÊ DESCOBRIU O NÚMERO SECRETO É ${numeroSecreto}`;
         }
 }
