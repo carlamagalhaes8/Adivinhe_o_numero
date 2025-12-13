@@ -20,9 +20,9 @@
             <div id="input">
                 <input type="text" maxlength="2" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
                                 if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="inserir_chute" placeholder="DIGITE SEU PALPITE">
-                <button id="botao_chute">CHUTAR</button>
+                <button id="botao_chute" onclick="chutar()">CHUTAR</button>
             </div>
-            <p>SEU NÚMERO É MENOR QUE 50, TENTE NOVAMENTE!</p>
+            <p id="retorno"></p>
         </div>
     </main>
 
