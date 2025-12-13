@@ -16,7 +16,8 @@ main{
     flex-direction: column;
     justify-content: center; 
     align-items: center;     
-    height: 95%;            
+    height: 95%;   
+    margin: 2.5em;         
 }
 
 #principal{
@@ -115,11 +116,11 @@ footer p{
 
     #input #inserir_chute, #botao_chute{
         padding: 0.5em;
-        margin-bottom: 0.938;
+
     }
 
     #input #inserir_chute{
-        margin-bottom: 0.938;
+        margin-bottom: 1em;
     }
 
     #input #botao_chute{
