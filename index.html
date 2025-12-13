@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivinhe o número</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/utils.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
 <body>
     <main>
         <div id="principal">
-            <img src="Assets/bola_de_cristal.png" alt="Logo bola de cristal">
+            <img src="styles/Assets/bola_de_cristal.png" alt="Logo bola de cristal">
             <h1>ADIVINHE O NÚMERO</h1>
-            <h2>ESTOU PENSANDO EM UM NÚMERO DE 1 A 99</h2>
+            <h2>ESTOU PENSANDO EM UM NÚMERO DE 0 A 99</h2>
             <div id="input">
-                <input type="text" maxlength="2" min="0" max="1000" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 1000) this.value = '';" id="inserir_chute" placeholder="DIGITE SEU PALPITE">
+                <input type="text" maxlength="2" min="0" max="99" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
+                                if (parseFloat(this.value.replace(',', '.')) > 99) this.value = '';" id="inserir_chute" placeholder="DIGITE SEU PALPITE">
                 <button id="botao_chute" onclick="chutar()">CHUTAR</button>
             </div>
             <p id="retorno"></p>
