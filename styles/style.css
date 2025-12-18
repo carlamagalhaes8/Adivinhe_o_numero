@@ -1,4 +1,4 @@
-* {
+* { /*global */
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ main{
     flex-direction: column;
     justify-content: center; 
     align-items: center;     
-    height: 95%;   
+    height: 87%;   
     margin: 2.5em;         
 }
 
@@ -33,7 +33,7 @@ main{
 }
 
 #principal img{
-    width: 18%;
+    width: 5em;
     margin-bottom: 0.125em;
 }
 
@@ -60,7 +60,7 @@ main{
     justify-content: center;
 
     width: 100%;
-    gap: 5%;
+    gap: 1em;
 }
 
 #input #inserir_chute, #botao_chute{
@@ -70,7 +70,7 @@ main{
     font-family: var(--fonte);
     color: var(--branco);
 
-    padding: 0.188em 8%;
+    padding: 0.188em 1em;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 2.5em;
     font-size: var(--tamanho-h2);
@@ -102,6 +102,7 @@ footer p{
 
     main{
         margin: 1.25em;
+        height: 91%;
     }
 
     #principal{
@@ -120,7 +121,7 @@ footer p{
     }
 
     #input #inserir_chute{
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
 
     #input #botao_chute{

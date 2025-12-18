@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adivinhe o número</title>
+<!DOCTYPE html> <!--Informa ao navegador que o documento está usando HTML5. -->
+<html lang="pt-br"> <!--indica que o conteúdo está em português do Brasil, auxiliando mecanismos de busca -->
+<head> <!--informações de configuração da página, que não aparecem visualmente para o usuário -->
+    <meta charset="UTF-8"> <!--padrão de caracteres, uso correto de acentos, cedilha e símbolos especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Define que a largura da página será igual à largura real do dispositivo e Define o nível de zoom inicial da página (100%) -->
+    <title>Adivinhe o número</title> <!--título da página, exibido na aba do navegador e usado por buscadores -->
+    
     <link rel="icon" href="styles/Assets/bola_de_cristal.png">
 
     <link rel="stylesheet" href="styles/style.css">
@@ -13,15 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> <!--conteúdo visível da página -->
     <main>
         <div id="principal">
             <img src="styles/Assets/bola_de_cristal.png" alt="Logo bola de cristal">
             <h1>ADIVINHE O NÚMERO</h1>
-            <h2>ESTOU PENSANDO EM UM NÚMERO DE 0 A 99</h2>
+            <h2>ESTOU PENSANDO EM UM NÚMERO DE 1 A 99</h2>
             <div id="input">
-                <input type="text" maxlength="2" min="0" max="99" oninput="this.value = this.value.replace(/[^0-9,]/g, '');
-                                if (parseFloat(this.value.replace(',', '.')) > 99) this.value = '';" id="inserir_chute" placeholder="DIGITE SEU PALPITE">
+                <input type="text" maxlength="2" oninput="this.value = this.value.replace(/[^0-9,]/g, '')" id="inserir_chute" placeholder="DIGITE SEU PALPITE"> <!--Define que o campo aceita texto (em vez de number), permitindo mais controle sobre o que pode ser digitado, Limita a digitação a no máximo 2 caracteres. Evento JavaScript que é executado sempre que o usuário digita algo no campo. A expressão regular /[^0-9,]/g remove qualquer caractere que não seja um dígito de 0 a 9 ou uma vírgula, garantindo que apenas números sejam inseridos no campo. -->
                 <button id="botao_chute" onclick="chutar()">CHUTAR</button>
             </div>
             <p id="retorno"></p>
